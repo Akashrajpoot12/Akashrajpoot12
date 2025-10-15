@@ -52,8 +52,6 @@
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/akashrajpoot12/akashrajpoot12/main/dist/github-contribution-grid-snek-dark.svg" alt="github contribution snake animation"/>
-  <br>
-  <sub><b>Note:</b> This animation is generated daily and reflects my GitHub contribution graph.</sub>
 </p>
 
 ---
