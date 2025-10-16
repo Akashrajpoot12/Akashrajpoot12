@@ -7,13 +7,21 @@ on:
 
 jobs:
   build:
-    # --- यह जरूरी हिस्सा है ---
     permissions:
       contents: write
-    # --------------------------
     runs-on: ubuntu-latest
     steps:
+      # Repositiry को चेकआउट करता है
       - uses: actions/checkout@v3
+
+      # --- यह नया और जरूरी स्टेप है ---
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      # ---------------------------------
+
+      # Snake एनीमेशन बनाता और सेव करता है
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
